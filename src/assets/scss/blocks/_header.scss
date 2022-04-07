@@ -74,14 +74,46 @@
         font-size: 18px;
     }
 
+    &__links {
+        display: flex;
+        align-items: baseline;
+    }
+
     &__link {
        
         &_email {
-            -webkit-border-radius: 5px;
-            -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b0bbc4), to(#ced9de)) 1 100%;
             &::before {
                 background-image: url('../images/email.svg');
 
+            }
+
+            &::after {
+                background-image: linear-gradient(0%, #9358F7, 6.67%, #9259F7, 13.33%, #8E5DF6, 20%, #8862F5,
+                    26.67%, #806BF4, 33.33%, #7575F2, 40%, #6882F0, 46.67%, #5990EE, 53.33%, #4A9FEB,
+                    60%, #3BADE9, 66.67%, #2EBAE7, 73.33%, #23C4E5, 80%, #1BCDE4, 86.67%, #15D2E3,
+                    93.33%, #11D6E2, 100%, #10D7E2);
+            }
+        }
+
+        &_linkedin {
+            &::before {
+                background-image: url('../images/linkedin.svg');
+
+            }
+
+            &::after {
+                background-image: linear-gradient(0.25turn, #6964DE, #FCA6E9);
+            }
+        }
+
+        &_github {
+            &::before {
+                background-image: url('../images/github.svg');
+
+            }
+
+            &::after {
+                background-image: linear-gradient(0.25turn, #D24074,#6518B4);
             }
         }
     }

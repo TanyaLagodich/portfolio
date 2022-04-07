@@ -18,18 +18,40 @@ body {
 
 .link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: $main-text-color;
+    margin-right: 10px;
     padding: 16px 0;
     border-radius: 4px;
+    position: relative;
+    max-width: 200px;
+    background-clip: padding-box;
+    border: solid 2px transparent; 
+    background-color: $white;
+    box-sizing: border-box;
+    flex-grow: 1;
+
     &::before {
         content: '';
-
+        margin-right: 10px;
+        max-width: 20px;
+        width: 100%;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-//     font-size: 16px;
-// line-height: 24px;
-// /* identical to box height, or 150% */
 
-
-// color: #1A1A1A;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: -2px;
+        border-radius: 4px;
+        z-index: -1;
+    }
 }

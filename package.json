@@ -38,7 +38,6 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "node-normalize-scss": "^8.1.2",
     "node-sass": "^7.0.1",
     "pngquant-bin": "^6.0.0",
     "sass": "^1.49.11",

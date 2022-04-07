@@ -33,10 +33,7 @@ function scripts() {
 
 function styles() {
 	return src('src/assets/scss/main.scss')
-	.pipe(sass({
-		outputStyle: 'compressed',
-		includePaths: require('node-normalize-scss').includePaths
-	}).on('error', sass.logError))
+	.pipe(sass().on('error', sass.logError))
 	.pipe(concat('main.min.css')) 
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) 
 	.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) 
