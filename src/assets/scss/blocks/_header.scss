@@ -30,27 +30,49 @@
             justify-content: space-between;
             flex-grow: 1;
             a {
+                position: relative;
                 font-size: 18px;
                 line-height: 22px;
                 color: $main-text-color;
                 text-decoration: none;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -5px;
+                    display: block;
+                    border-bottom: 1px solid;
+                    opacity: 0;
+                    transition: opacity 0.35s, transform 0.35s;
+                    transform: scale(0,1);
+                }
+                
+                &:hover:after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
         }
     }
 
     &__theme-button {
-        background-image: url('../images/sunfill.svg');
+        padding: 0;
         background-color: transparent;
-        background-repeat: no-repeat;
         border: none;
+        outline: none;
         width: 22px;
         height: 22px;
+        cursor: pointer;
     }
 
     &__wrapper {
+        padding-bottom: 92px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 100vh;
     }
 
     &__sub-text {
