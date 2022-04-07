@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/TanyaLagodich/portfolio#readme",
   "dependencies": {
+    "css-reset-and-normalize": "^2.3.6",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-csso": "^4.0.1",
