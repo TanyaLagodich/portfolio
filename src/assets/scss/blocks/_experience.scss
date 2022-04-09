@@ -1,0 +1,75 @@
+.experience {
+    padding: 124px 0 88px;
+    background-color: $light;
+
+    &__title {
+        margin-bottom: 33px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__jobs {
+        position: relative;
+        max-width: 193px;
+        width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: $main-color;
+            width: 2px;
+        }
+    }
+
+    &__job {
+
+        &-title {
+            padding: 18px 0 15px 36px;
+            text-transform: none;
+            cursor: pointer;
+            
+
+            &_active {
+                background-color: $main-color;
+                color: $white;
+            }
+
+        }
+
+        &-descr {
+
+        }
+
+        &-position {
+            margin-bottom: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-company {
+            display: inline-block;
+            margin-bottom: 26px;
+            color: $link;
+            font-size: 14px;
+        }
+
+        &-responsibilities {
+            list-style-type: square;
+
+            li:not(:last-child) {
+                margin-bottom: 26px;
+            }
+        }
+
+    }
+
+
+
+}
