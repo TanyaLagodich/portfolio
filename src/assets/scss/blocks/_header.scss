@@ -96,24 +96,12 @@
         font-size: 18px;
     }
 
-    &__links {
-        display: flex;
-        align-items: baseline;
-    }
-
     &__link {
        
         &_email {
             &::before {
                 background-image: url('../images/email.svg');
 
-            }
-
-            &::after {
-                background-image: linear-gradient(0%, #9358F7, 6.67%, #9259F7, 13.33%, #8E5DF6, 20%, #8862F5,
-                    26.67%, #806BF4, 33.33%, #7575F2, 40%, #6882F0, 46.67%, #5990EE, 53.33%, #4A9FEB,
-                    60%, #3BADE9, 66.67%, #2EBAE7, 73.33%, #23C4E5, 80%, #1BCDE4, 86.67%, #15D2E3,
-                    93.33%, #11D6E2, 100%, #10D7E2);
             }
         }
 

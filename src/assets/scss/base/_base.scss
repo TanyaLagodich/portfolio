@@ -21,10 +21,15 @@ h3 {
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 1120px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
 }
 
 .link {
@@ -64,5 +69,18 @@ h3 {
         margin: -2px;
         border-radius: 4px;
         z-index: -1;
+        background-image: linear-gradient(0%, #9358F7, 6.67%, #9259F7, 13.33%, #8E5DF6, 20%, #8862F5,
+            26.67%, #806BF4, 33.33%, #7575F2, 40%, #6882F0, 46.67%, #5990EE, 53.33%, #4A9FEB,
+            60%, #3BADE9, 66.67%, #2EBAE7, 73.33%, #23C4E5, 80%, #1BCDE4, 86.67%, #15D2E3,
+            93.33%, #11D6E2, 100%, #10D7E2);
     }
+}
+
+.icon-link {
+    background-image: url('../images/github.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
 }
