@@ -1,4 +1,23 @@
-$main-color: #1A1A1A;
 $white: #FFFFFF;
 $light: #FBFBFB;
-$link: #1F26B7;
+
+body {
+    --main-color: #1A1A1A;
+    --description-text: #1A1A1A;
+    --header-background-color: #FFFFFF;
+    --main-background-color: #FBFBFB;
+    --theme-button-img: '../images/sunfill.svg';
+    --experience-job-active: #1F1E1E;
+    --experience-job-active-before: #1F1E1E;
+    --blue-text: #1F26B7;
+}
+
+
+body.dark-theme {
+    --main-color: #F0F0F0;
+    --description-text: #C4C4C4;
+    --header-background-color: #111111;
+    --main-background-color: #000000;
+    --experience-job-active-before: #FFFFFF;
+    --blue-text: #6CACE4;
+}

@@ -1,5 +1,6 @@
 .header {
     height: 100vh;
+    background-color: var(--header-background-color);
 
     .container {
         height: 100%;
@@ -33,7 +34,7 @@
                 position: relative;
                 font-size: 18px;
                 line-height: 22px;
-                color: $main-color;
+                color: var(--main-color);
                 text-decoration: none;
 
                 &::after {
@@ -65,6 +66,10 @@
         width: 22px;
         height: 22px;
         cursor: pointer;
+        
+        &:focus {
+            outline: none;
+        }
     }
 
     &__wrapper {
@@ -97,32 +102,17 @@
     }
 
     &__link {
-       
-        &_email {
-            &::before {
-                background-image: url('../images/email.svg');
-
-            }
-        }
 
         &_linkedin {
+
             &::before {
-                background-image: url('../images/linkedin.svg');
-
-            }
-
-            &::after {
                 background-image: linear-gradient(0.25turn, #6964DE, #FCA6E9);
             }
         }
 
         &_github {
+
             &::before {
-                background-image: url('../images/github.svg');
-
-            }
-
-            &::after {
                 background-image: linear-gradient(0.25turn, #D24074,#6518B4);
             }
         }

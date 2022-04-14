@@ -1,6 +1,6 @@
 .projects {
     padding: 88px 0 111px;
-    background-color: $light;
+    background-color: var(--main-background-color);
 
     &__title {
         margin-bottom: 51px;
@@ -33,11 +33,12 @@
         &__descr {
             margin-bottom: 30px;
             font-size: 14px;
+            color: var(--description-text);
         }
 
         &__stack {
             font-size: 14px;
-            color: $link;
+            color: var(--blue-text);
         }
 
         &__link {
